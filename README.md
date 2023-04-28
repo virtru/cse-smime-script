@@ -11,8 +11,8 @@ python cse_cmd.py -h
 
 # Sample steps to upload keys/certs for CSE
 
-1. Create a directory for storing all wrapped private keys.
-  Ex: $root/wrapped_keys
+1. Create a directory for storing all wrapped private keys. <br />
+  Ex: $root/wrapped_keys <br />
   * The wrapped private key file for each user should have basename as email-id
     and a '.wrap' extension.
       Ex: $root/wrapped_keys/user1@example.com.wrap
@@ -23,8 +23,8 @@ python cse_cmd.py -h
       'wrapped_private_key': 'wrapped private key bytes'
     }
 
-2. Create a directory for storing all certificates in p7 pem format.
-  Ex: $root/p7pem_certs
+2. Create a directory for storing all certificates in p7 pem format. <br />
+  Ex: $root/p7pem_certs <br />
   * The certificate file should contain the full chain to root CA and should
     have basename as email-id and a '.p7pem' extension.
     Ex: $root/p7pem_certs/user1@example.com.p7pem
@@ -32,13 +32,13 @@ python cse_cmd.py -h
     it to a p7 pem format:
       openssl pkcs7 -inform DER -in {old_name.p7b} -outform PEM -out {new_name.p7pem}
 
-3. Note that all commands require the following argument
+3. Note that all commands require the following argument <br />
   --creds: a json file contains credentials to the service account created in
         you GCP project. After creating a service account, you can download
-        the credentials to that account to a json file, which you will use here.
-  Ex: stored at $root/svc_acct_creds.json
+        the credentials to that account to a json file, which you will use here. <br />
+  Ex: stored at $root/svc_acct_creds.json <br />
 
-4. Easiest is to run the 'insert' command to insert key pairs and identities
+4. Easiest is to run the 'insert' command to insert key pairs and identities <br />
   Ex: python cse_cmd.py insert
       --creds $root/svc_acct_creds.json
       --inkeydir $root/wrapped_keys
@@ -48,5 +48,5 @@ python cse_cmd.py -h
     and then run insert_identity using that keypair id. You can also get the
     keypair id by running list_keypair command.
 
-5. You can check if user has a valid cse keypair or identity by running
+5. You can check if user has a valid cse keypair or identity by running <br />
   list_keypair and/or list_identity
