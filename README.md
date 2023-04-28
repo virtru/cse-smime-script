@@ -48,7 +48,7 @@ python cse_cmd.py -h
 
   * alternatively, you could run insert_keypair, note down the keypair id
     and then run insert_identity using that keypair id. You can also get the
-    keypair id by running list_keypair command.
+    keypair id by running ```list_keypair``` command.
 
 5. You can check if user has a valid cse keypair or identity by running <br />
-  list_keypair and/or list_identity
+  ```list_keypair``` and/or ```list_identity```
