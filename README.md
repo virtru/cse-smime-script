@@ -7,7 +7,7 @@ Python Setup
 3. ```pip install -r requirements.txt``` 
 
 # Invoke the tool
-python cse_cmd.py -h
+```python cse_cmd.py -h```
 
 # Sample steps to upload keys/certs for CSE
 
