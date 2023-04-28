@@ -12,7 +12,7 @@ python cse_cmd.py -h
 # Sample steps to upload keys/certs for CSE
 
 1. Create a directory for storing all wrapped private keys. <br />
-  Ex: $root/wrapped_keys <br />
+  Ex: ```$root/wrapped_keys``` <br />
   * The wrapped private key file for each user should have basename as email-id
     and a '.wrap' extension. <br />
       Ex: ```$root/wrapped_keys/user1@example.com.wrap```
@@ -26,7 +26,7 @@ python cse_cmd.py -h
     ```
 
 2. Create a directory for storing all certificates in p7 pem format. <br />
-  Ex: $root/p7pem_certs <br />
+  Ex: ```$root/p7pem_certs``` <br />
   * The certificate file should contain the full chain to root CA and should
     have basename as email-id and a '.p7pem' extension.
     Ex: $root/p7pem_certs/user1@example.com.p7pem
