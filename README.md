@@ -17,11 +17,11 @@ python cse_cmd.py -h
     and a '.wrap' extension.
       Ex: $root/wrapped_keys/user1@example.com.wrap
   * The wrapped private key file should have a json object with
-    two required fields:
+    two required fields: ```
     {
       'kacls_url': 'url of kacls configured in CSE Admin Console',
       'wrapped_private_key': 'wrapped private key bytes'
-    }
+    } ```
 
 2. Create a directory for storing all certificates in p7 pem format. <br />
   Ex: $root/p7pem_certs <br />
