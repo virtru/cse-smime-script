@@ -38,7 +38,7 @@ Python Setup
   ```--creds```: a json file contains credentials to the service account created in
         you GCP project. After creating a service account, you can download
         the credentials to that account to a json file, which you will use here. <br />
-  Ex: ```stored at $root/svc_acct_creds.json``` <br />
+  Ex: stored at ```$root/svc_acct_creds.json``` <br />
 
 4. Easiest is to run the 'insert' command to insert key pairs and identities. Ex: <br />
   ``` 
