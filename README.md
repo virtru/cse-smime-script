@@ -41,10 +41,11 @@ Python Setup
   Ex: ```stored at $root/svc_acct_creds.json``` <br />
 
 4. Easiest is to run the 'insert' command to insert key pairs and identities <br />
-  Ex: ``` python cse_cmd.py insert
-      --creds $root/svc_acct_creds.json 
-      --inkeydir $root/wrapped_keys 
-      --incertdir $root/p7pem_certs ```
+  Ex: ```         python cse_cmd.py insert
+              --creds $root/svc_acct_creds.json 
+              --inkeydir $root/wrapped_keys 
+              --incertdir $root/p7pem_certs
+      ```
 
   * alternatively, you could run insert_keypair, note down the keypair id
     and then run insert_identity using that keypair id. You can also get the
