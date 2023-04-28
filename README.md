@@ -14,8 +14,8 @@ python cse_cmd.py -h
 1. Create a directory for storing all wrapped private keys. <br />
   Ex: $root/wrapped_keys <br />
   * The wrapped private key file for each user should have basename as email-id
-    and a '.wrap' extension.
-      Ex: $root/wrapped_keys/user1@example.com.wrap
+    and a '.wrap' extension. <br />
+      Ex: ```$root/wrapped_keys/user1@example.com.wrap```
   * The wrapped private key file should have a json object with
     two required fields: <br /> 
     ```
