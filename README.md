@@ -40,8 +40,7 @@ Python Setup
         the credentials to that account to a json file, which you will use here. <br />
   Ex: ```stored at $root/svc_acct_creds.json``` <br />
 
-4. Easiest is to run the 'insert' command to insert key pairs and identities <br />
-  Ex:
+4. Easiest is to run the 'insert' command to insert key pairs and identities. Ex: <br />
   ``` 
         python cse_cmd.py insert
         --creds $root/svc_acct_creds.json 
