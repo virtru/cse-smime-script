@@ -35,7 +35,7 @@ Python Setup
       ``` openssl pkcs7 -inform DER -in {old_name.p7b} -outform PEM -out {new_name.p7pem} ```
 
 3. Note that all commands require the following argument <br />
-  --creds: a json file contains credentials to the service account created in
+  ```--creds```: a json file contains credentials to the service account created in
         you GCP project. After creating a service account, you can download
         the credentials to that account to a json file, which you will use here. <br />
   Ex: ```stored at $root/svc_acct_creds.json``` <br />
