@@ -2,9 +2,9 @@ Python Setup
 
 # Create a virtual environment and install required modules into it
 
-python3 -m venv cli_env <br/>
-source cli_env/bin/activate <br/>
-pip install -r requirements.txt <br/>
+1. python3 -m venv cli_env 
+2. source cli_env/bin/activate 
+3. pip install -r requirements.txt 
 
 # Invoke the tool
 python cse_cmd.py -h
