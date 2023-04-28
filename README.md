@@ -19,9 +19,9 @@ python cse_cmd.py -h
   * The wrapped private key file should have a json object with
     two required fields: <br /> 
     ```
-    { <br />
-      'kacls_url': 'url of kacls configured in CSE Admin Console', <br />
-      'wrapped_private_key': 'wrapped private key bytes' <br />
+    { 
+      'kacls_url': 'url of kacls configured in CSE Admin Console', 
+      'wrapped_private_key': 'wrapped private key bytes' 
     } 
     ```
 
@@ -41,10 +41,10 @@ python cse_cmd.py -h
   Ex: stored at $root/svc_acct_creds.json <br />
 
 4. Easiest is to run the 'insert' command to insert key pairs and identities <br />
-  Ex: ``` python cse_cmd.py insert <br />
-      --creds $root/svc_acct_creds.json <br />
-      --inkeydir $root/wrapped_keys <br />
-      --incertdir $root/p7pem_certs <br /> ```
+  Ex: ``` python cse_cmd.py insert
+      --creds $root/svc_acct_creds.json 
+      --inkeydir $root/wrapped_keys 
+      --incertdir $root/p7pem_certs ```
 
   * alternatively, you could run insert_keypair, note down the keypair id
     and then run insert_identity using that keypair id. You can also get the
