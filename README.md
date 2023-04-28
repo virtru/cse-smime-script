@@ -2,11 +2,11 @@ Python Setup
 
 # Create a virtual environment and install required modules into it
 
-python3 -m venv cli_env
-source cli_env/bin/activate
-pip install -r requirements.txt
+python3 -m venv cli_env <br/>
+source cli_env/bin/activate <br/>
+pip install -r requirements.txt <br/>
 
-# invoke the tool
+# Invoke the tool
 python cse_cmd.py -h
 
 # Sample steps to upload keys/certs for CSE
