@@ -29,7 +29,7 @@ python cse_cmd.py -h
   Ex: ```$root/p7pem_certs``` <br />
   * The certificate file should contain the full chain to root CA and should
     have basename as email-id and a '.p7pem' extension.
-    Ex: $root/p7pem_certs/user1@example.com.p7pem
+    Ex: ```$root/p7pem_certs/user1@example.com.p7pem```
   * If you have p7b file, you can use the following openssl command to convert
     it to a p7 pem format: <br />
       ``` openssl pkcs7 -inform DER -in {old_name.p7b} -outform PEM -out {new_name.p7pem} ```
